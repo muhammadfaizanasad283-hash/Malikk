@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gtti - Technical Education & Vocational Training Authority</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            color: #334155; /* Dark text */
+        }
+        /* Custom scroll-behavior for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header and Navigation -->
+    <header class="bg-teal-800 text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo/Site Title -->
+            <a href="#" class="tracking-tight rounded-md p-2 hover:bg-teal-700 transition-colors flex items-center">
+                <img src="https://th.bing.com/th/id/R.5a6b9952b4b5c61fde2c13bd73a6878c?rik=1%2fNd9CXmlejTHQ&riu=http%3a%2f%2fwww.logotypes101.com%2flogos%2f942%2fF67D4545C9141FF98B90F24A889751B4%2fgovernmentofpunjab.png&ehk=u5xEvfbs4yMvWKpuOuQEtK%2byLKdxzK0WeOnJmtqeZ%2fM%3d&risl=&pid=ImgRaw&r=0" alt="GTTI Logo" class="h-10 mr-2"> <!-- Adjust the path accordingly -->
+                GTTI <span class="text-yellow-300">Punjab</span>
+            </a>
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-yellow-300 transition-colors text-lg font-medium">About Us</a>
+                <a href="#programs" class="hover:text-yellow-300 transition-colors text-lg font-medium">Our Programs</a>
+                <a href="#map" class="hover:text-yellow-300 transition-colors text-lg font-medium">Location</a>
+                <a href="#contact" class="hover:text-yellow-300 transition-colors text-lg font-medium">Contact</a>
+            </div>
+            <!-- Mobile Menu Button (Hamburger) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none focus:ring-2 focus:ring-yellow-300 p-2 rounded-md">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden bg-teal-700 absolute inset-x-0 top-full pb-4 shadow-lg rounded-b-lg">
+            <div class="flex flex-col items-center space-y-4 py-4">
+                <a href="#about" class="block text-white hover:text-yellow-300 text-lg font-medium w-full text-center py-2 rounded-md hover:bg-teal-600 transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About Us</a>
+                <a href="#programs" class="block text-white hover:text-yellow-300 text-lg font-medium w-full text-center py-2 rounded-md hover:bg-teal-600 transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Our Programs</a>
+                <a href="#map" class="block text-white hover:text-yellow-300 text-lg font-medium w-full text-center py-2 rounded-md hover:bg-teal-600 transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Find a Center</a>
+                <a href="#contact" class="block text-white hover:text-yellow-300 text-lg font-medium w-full text-center py-2 rounded-md hover:bg-teal-600 transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Connect</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-teal-600 to-teal-800 text-white py-24 md:py-32 flex items-center justify-center text-center overflow-hidden rounded-b-3xl shadow-xl">
+        <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://placehold.co/1920x1080/008080/ffffff?text=GTTI+Background'); background-size: cover; background-position: center;"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight drop-shadow-lg animate-pulse">
+                Empowering Skills, Building Futures with <span class="text-yellow-300">GTTI</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-md">
+                Providing quality technical and vocational training to transform lives and strengthen the economy of Punjab.
+            </p>
+            <a href="#about" class="inline-block bg-yellow-400 text-teal-900 font-bold py-4 px-10 rounded-full text-lg md:text-xl hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                Explore Programs
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container mx-auto px-6 py-16 md:py-24">
+        <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100">
+            <h2 class="text-4xl font-bold text-center text-teal-800 mb-10">About GTTI Punjab</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.XenbpiWtkIADyTn4r44gMQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Students in a vocational workshop" class="rounded-xl shadow-md w-full h-auto">
+                </div>
+                <div>
+                    <p class="text-lg leading-relaxed mb-6">
+                        The Technical Education & Vocational Training Authority (GTTI) Punjab is a premier organization committed to providing high-quality technical education and vocational training. Our aim is to produce a skilled workforce that meets the demands of both local and international industries, contributing significantly to economic development and poverty alleviation.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        GTTI offers a diverse range of market-driven programs in various trades and technologies. With a network of institutions across Punjab, we ensure accessibility and relevance of training. Our state-of-the-art workshops, experienced instructors, and industry linkages provide students with practical skills and career opportunities, fostering self-reliance and entrepreneurship.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-10 text-center">
+                <p class="text-xl font-semibold text-teal-700">
+                    "Skilled hands, bright futures – the promise of GTTI."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Programs/Gallery Section -->
+    <section id="programs" class="bg-teal-50 py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-teal-800 mb-12">Discover Our Training Programs</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Image 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.urruLl4yVcz_TCukvrio_gHaEc?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Students learning electrical wiring" class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/8d8d8d/ffffff?text=Placeholder+Image';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-2">Electrical Technology</h3>
+                        <p class="text-gray-600">Master electrical systems, wiring, and maintenance with hands-on training for in-demand careers.</p>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
+                    <img src="https://thafd.bing.com/th/id/OIP.AsVpXumWd_cHa95lD-9UAgHaEd?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Students in a computer lab" class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/8d8d8d/ffffff?text=Placeholder+Image';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-2">Information Technology</h3>
+                        <p class="text-gray-600">Develop essential IT skills, from software development to network administration, for the digital age.</p>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
+                    <img src="https://thafd.bing.com/th/id/OIP.N-yic4KtCUevjq1Pe_49QgHaEJ?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mechanics working on a car" class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/8d8d8d/ffffff?text=Placeholder+Image';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-2">Automobile Mechanics</h3>
+                        <p class="text-gray-600">Learn vehicle diagnostics, repair, and maintenance using modern tools and techniques.</p>
+                    </div>
+                </div>
+                <!-- Image 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
+                    <img src="data:image/webp;base64,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" alt="Students designing clothes" class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/8d8d8d/ffffff?text=Placeholder+Image';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-2">Fashion & Textile Design</h3>
+                        <p class="text-gray-600">Unleash creativity in fashion design, pattern making, and garment construction for the textile industry.</p>
+                    </div>
+                </div>
+                <!-- Image 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.ETWrz-OgVT2RdFptgcrVBwHaFc?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Plumber working on pipes" class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/8d8d8d/ffffff?text=Placeholder+Image';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-2">Plumbing & HVAC</h3>
+                        <p class="text-gray-600">Gain practical skills in plumbing, heating, ventilation, and air conditioning systems.</p>
+                    </div>
+                </div>
+                <!-- Image 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.SkFpnISF3-6kfHTgC1hbEQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chef teaching cooking" class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/8d8d8d/ffffff?text=Placeholder+Image';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-2">Culinary Arts</h3>
+                        <p class="text-gray-600">Develop culinary expertise, from food preparation to hospitality management, for the food industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Campus Map Section -->
+        <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100">
+            <h2 class="text-4xl font-bold text-center text-teal-800 mb-10">GTTI Gulberg Lahore</h2>
+            <div class="aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden shadow-md">
+                <!-- Embedded Google Map - GTTI Gulberg Center -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.258632202978!2d74.331514315136!3d31.4915149813755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903d3b3b3b3b3%3A0x9e1b3b3b3b3b3b3b!2sGTTI%20Gulberg%2C%2096-H%20Gulberg%20II%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1641234567890!5m2!1sen!2s"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="rounded-xl"
+                ></iframe>
+            </div>
+            <p class="text-center text-lg text-gray-700 mt-8">
+                GTTI Gulberg Lahore
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact With Us Section (Social Media) -->
+    <section id="contact" class="bg-teal-800 text-white py-16 md:py-24 rounded-t-3xl shadow-inner">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-yellow-300 mb-10">Contact With GTTI</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                Stay informed about our latest programs, success stories, and updates by following us on social media. Join our community!
+            </p>
+            <div class="flex justify-center space-x-8 md:space-x-12 mt-8">
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/tevta_official" target="_blank" rel="noopener noreferrer"
+                   class="flex flex-col items-center text-white hover:text-yellow-300 transition-colors transform hover:scale-110 duration-300 group">
+                    <i class="fab fa-instagram text-5xl mb-2 group-hover:animate-bounce"></i>
+                    <span class="text-lg font-medium">Instagram</span>
+                </a>
+                <!-- Facebook Link -->
+                <a href="https://www.facebook.com/GTTIPunjab.Official" target="_blank" rel="noopener noreferrer"
+                   class="flex flex-col items-center text-white hover:text-yellow-300 transition-colors transform hover:scale-110 duration-300 group">
+                    <i class="fab fa-facebook-f text-5xl mb-2 group-hover:animate-bounce"></i>
+                    <span class="text-lg font-medium">Facebook</span>
+                </a>
+                <!-- WhatsApp Link -->
+                <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer"
+                   class="flex flex-col items-center text-white hover:text-yellow-300 transition-colors transform hover:scale-110 duration-300 group">
+                    <i class="fab fa-whatsapp text-5xl mb-2 group-hover:animate-bounce"></i>
+                    <span class="text-lg font-medium">WhatsApp</span>
+                </a>
+            </div>
+            <p class="text-md mt-10">
+                For direct inquiries, feel free to reach out via WhatsApp or through our social media platforms.
+            </p>
+        </div>
+    </section>
+
+  
+    <!-- Footer -->
+    <footer class="bg-teal-900 text-gray-300 py-10 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-4 md:mb-0">
+                <h3 class="text-2xl font-bold text-yellow-300">GTTI Punjab</h3>
+                <p class="text-sm mt-2">&copy; 2025 GTTI Punjab. All rights reserved.</p>
+            </div>
+            <div class="text-sm">
+                <p>96-H Gulberg II, Lahore, Punjab, Pakistan</p>
+                <p>Email: info@tevta.gop.pk</p>
+                <p>Phone: +92 42 45768955-59</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside (optional, but good UX)
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
